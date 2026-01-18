@@ -30,7 +30,7 @@ class DepthGateNode(Node):
         # ---- Parameters (tune these later) ----
         self.declare_parameter("depth_topic", "/camera/camera/depth/image_rect_raw")
         self.declare_parameter("min_depth_m", 0.10)     # D405 works best close-up
-        self.declare_parameter("max_depth_m", 0.25)
+        self.declare_parameter("max_depth_m", 0.70)
         self.declare_parameter("min_pixels", 2500)      # threshold for "something close"
         self.declare_parameter("publish_rate_hz", 30.0) # publish even if no new frames
         self.declare_parameter("debug_log", False)
