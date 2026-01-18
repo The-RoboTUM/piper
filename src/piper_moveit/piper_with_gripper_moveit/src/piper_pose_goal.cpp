@@ -20,10 +20,10 @@ int main(int argc, char* argv[])
 
   // Set a target Pose (EXACTAMENTE como en la documentación)
   geometry_msgs::msg::Pose target_pose;
-  target_pose.orientation.w = 1.0;
-  target_pose.position.x = 0.28;
-  target_pose.position.y = -0.2;
-  target_pose.position.z = 0.5;
+  target_pose.orientation.w = 0.0;
+  target_pose.position.x = 1.0;
+  target_pose.position.y = 0;
+  target_pose.position.z = 1.0;
   move_group_interface.setPoseTarget(target_pose);
 
   // Create a plan to that target pose
