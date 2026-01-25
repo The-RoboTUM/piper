@@ -22,7 +22,7 @@ def generate_launch_description():
     )
 
 
-    # NUEVO: Controlador Cartesian
+    # NEW: Cartesian Controller
     piper_controller = Node(
         package='piper',
         executable='control_manager',

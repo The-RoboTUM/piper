@@ -40,7 +40,7 @@ setup(
             'joystick_controller = piper.joystick_controller:main',
             'piper_conrol_gamesir = piper.piper_conrol_gamesir:main',
             'game_controller_manager = piper.game_controller_manager:main',
-            
+            'z_oscillator = piper_teleoperation.z_oscillator_node:main',
         ],
     },
 )
