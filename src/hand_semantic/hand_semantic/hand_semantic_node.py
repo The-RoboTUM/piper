@@ -52,8 +52,8 @@ class HandSemanticNode(Node):
         self.declare_parameter("roi_lock_center_x", True)  # force x center to 0.5
         self.declare_parameter("roi_center_x", 0.6)        # normalized 0..1
         self.declare_parameter("roi_center_y", 0.8)       # lower-middle
-        self.declare_parameter("roi_width", 0.40)          # narrow vertical band
-        self.declare_parameter("roi_height", 0.35)         # tall area
+        self.declare_parameter("roi_width", 0.50)          # narrow vertical band
+        self.declare_parameter("roi_height", 0.45)         # tall area
         # How strict is "80% hand inside ROI"
         self.declare_parameter("roi_min_inside_ratio", 0.70)  # 80%
         # method: landmark_ratio (recommended) or bbox_overlap
@@ -63,7 +63,7 @@ class HandSemanticNode(Node):
         # Depth params
         # -----------------------
         self.declare_parameter("depth_enabled", True)
-        self.declare_parameter("min_depth_m", 0.15)  # 10 cm
+        self.declare_parameter("min_depth_m", 0.10)  # 10 cm
         self.declare_parameter("max_depth_m", 0.30)  # 30 cm
         self.declare_parameter("depth_sync_tolerance_s", 0.10)  # accept depth within 100ms
         self.declare_parameter("depth_sample_window", 7)        # odd number recommended
